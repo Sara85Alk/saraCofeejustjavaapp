@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hazimfenjan.saracofee.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff">
+        <EditText
+            android:id="@+id/user-name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="your name..."
+            android:padding="10dp"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/whipped_cream_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:textSize="20sp"
+            android:text="@string/WippedCream"/>
+
+        <CheckBox
+            android:id="@+id/choco_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Choclate"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/incrementBt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            style="@style/textviewTextSize"
+            android:onClick="increment"
+            android:text="+"/>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            style="@style/textviewTextSize"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/decrementBt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="decrement"
+            style="@style/textviewTextSize"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        style="@style/textviewTextSize"
+        android:layout_gravity="center"
+        android:onClick="order"
+        android:text="@string/Order"/>
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        style="@style/textviewTextSize"
+        android:text="@string/Order_summary"/>
+
+</LinearLayout>

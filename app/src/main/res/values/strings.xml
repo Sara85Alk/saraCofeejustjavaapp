@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">saraCofee</string>
+
+    <string name="Order_summary">Order summary</string>
+
+    <string name="Thank_you">Thank you</string>
+
+    <string name="Add_whipped_cream">Add whipped cream</string>
+
+    <string name="Add_chocolate">Add chocolate</string>
+
+    <string name="Quantity">Quantity</string>
+
+    <string name="Total">Total</string>
+
+    <string name="WippedCream">WippedCream<xliff:g id="addWhippedCream" example="true">%b</xliff:g></string>
+
+    <string name="Choclate">Choclate</string>
+
+    <string name="Order">Order</string>
+
+    <string name="user_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+
+    <string name="order_summary_email_subject"> to :  <xliff:g id="name" example="Amy">%s</xliff:g></string>
+
+</resources>
